@@ -73,8 +73,39 @@ The HC-SR04 Sensor is used to read the
 
 ![](https://www.taydaelectronics.com/media/catalog/product/cache/1/image/500x500/9df78eab33525d08d6e5fb8d27136e95/a/-/a-1554.jpg)
 
-We use this LED to show if access is granted when the RFID Card is tapped. 
+We use this LED to show if access is granted when the RFID Card is tapped. The LED lights up when the authorized card is tapped. It does not light up when the unauthorized card is tapped.
 
 ------------
+
+##### 1 LCD
+
+![](https://www.dnatechindia.com/image/cache/catalog/16x2-alphanumeric-display-green-buy-india-500x500.jpg)
+
+We use this LCD to display the authorized card holder's information when tapped.
+
+------------
+
+##### Resistors
+###### 1 330Ω Resistor
+
+![](https://storage.googleapis.com/stateless-www-faranux-com/2017/03/330-ohm.jpg)
+
+Resistor for the LED
+###### 1 10KΩ Resistor
+
+![](https://i.ebayimg.com/images/g/~OEAAOSwA3dYeQl6/s-l300.jpg)
+
+Resistor for the DHT11 Sensor
+
+------------
+
+##### RFID / NFC MFRC522 Card Reader Module
+
+![](https://mundialcomponentes.com.br/arquivos/produtos/imagens_adicionais/304eb202af63065ab456a07af402ac31d13d9599.jpeg)
+
+We use this card and card reader as an authorization checkpoint.
+
+------------
+
 
 
