@@ -25,13 +25,13 @@ ST0324 Internet of Things (IOT)
 
 
 ## Section 1 Overview of SmartWH
-###### A.  What is SmartWH about?
+##### A.  What is SmartWH about?
 SmartWH is our interpretation of a smart warehouse. It has everything you need to monitor and maintain a warehouse. Our goal was to make a comprehensive system to monitor and protect a technologically advanced warehouse. The warehouse has an RFID card reader, a temperature and humidity sensor, a burglar alarm, 
 
-###### B. Final Raspberry PI Setup
+##### B. Final Raspberry PI Setup
 This is what the final setup should look like.
 
-###### C. System Architecture Diagram
+##### C. System Architecture Diagram
 This is the system architecture diagram of our program.
 
 
