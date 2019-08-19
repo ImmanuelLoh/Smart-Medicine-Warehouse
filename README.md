@@ -108,4 +108,7 @@ We use this card and card reader as an authorization checkpoint.
 ------------
 
 
+## Section 3 Hardware Setup
+In this section, we will connect all the necessary components described in Section 2.
 
+##### Fritzing Diagrams
