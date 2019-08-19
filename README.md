@@ -47,10 +47,34 @@ This is the system architecture diagram of our program.
 
 ![](https://potentiallabs.com/cart/image/cache/catalog/new%20components/DHT11-800x800.jpg)
 
-A DHT11 Sensor reads the room's temperature and humidity. We use this sensor to get the values of the room's temperature and humidity.
+The DHT11 Sensor reads the room's temperature and humidity. We use this sensor to get the values of the room's temperature and humidity.
+
+------------
+
+
 
 ###### 1 Sound Sensor
 
 ![](https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/1C/80/94db0a4e-61fa-4dc6-9533-83a7d301a016.JPG)
+
+The Sound Sensor reads the room's ambient sound level. We use this sensor to 
+
+------------
+
+##### 1 HC-SR04 Sensor
+
+![](https://www.makerlab-electronics.com/my_uploads/2016/05/ultrasonic-sensor-HCSR04-1.jpg)
+
+The HC-SR04 Sensor is used to read the
+
+------------
+
+##### 1 LED
+
+![](https://www.taydaelectronics.com/media/catalog/product/cache/1/image/500x500/9df78eab33525d08d6e5fb8d27136e95/a/-/a-1554.jpg)
+
+We use this LED to show if access is granted when the RFID Card is tapped. 
+
+------------
 
 
