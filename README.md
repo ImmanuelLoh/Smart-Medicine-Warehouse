@@ -65,7 +65,7 @@ The Sound Sensor reads the room's ambient sound level. We use this sensor to
 
 ![](https://www.makerlab-electronics.com/my_uploads/2016/05/ultrasonic-sensor-HCSR04-1.jpg)
 
-The HC-SR04 Sensor is used to read the
+The HC-SR04 Sensor is used as a parking sensor. It reads the distance of the car to the sensor and if the car gets too close, it will display a message on the LCD screen.
 
 ------------
 
@@ -77,11 +77,13 @@ We use this LED to show if access is granted when the RFID Card is tapped. The L
 
 ------------
 
-##### 1 LCD
+##### 2 LCD
 
 ![](https://www.dnatechindia.com/image/cache/catalog/16x2-alphanumeric-display-green-buy-india-500x500.jpg)
 
-We use this LCD to display the authorized card holder's information when tapped.
+We use one LCD to display the authorized card holder's information when tapped.
+
+We use the other LCD to display a message when the distance sensor recognises that the car is too close.
 
 ------------
 
