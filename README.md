@@ -376,10 +376,19 @@ Install Mosquitto broker and clients to your Raspberry Pi
 sudo apt-get install mosquitto mosquitto-clients
 ```
 
+## Section 9 Web Interface Setup
+
+
+
+
+## Section 10 Expected Outcome
+
 ### Entry Point RPI
 Entry Point RPI requires the codes in the RFID folder. When working correctly, it will display a message on the LCD screen when an RFID card is tapped. If the card is not authorized, it will display "Access Denied". If I tap my authorized card it will display "Hello Immanuel". Everytime I tap my authorized card, it will take a picture and send it to AWS. This is a safety measure in place for the warehouse. 
 
-### 
+### Parking Lot RPI
+Parking Lot RPI requires the codes in the Distance Sensor folder. When working correctly, it will display a message on the LCD screen if a car is too close, far or just nice. If the car is too far, it will display "Reverse". If it the car is too close, it will display "Stop". If the car is in perfect parking distance, it will display "Park".
 
-
+### Warehouse RPI
+The Warehouse RPI requires the codes in the Server, Sound Sensor, Telegram and Temperature folders. When working correctly, the Warehouse RPI will have a webpage, where there will be a graph for the temperature and a graph for the RFID card reader. Both display historical values of the two in a table and a graph. The data captured and displayed is Temperature in °C and number of times the RFID card has been tapped, respectively. There is also a button to remotely control the LED. A telegram bot can be launched. This telegram bot can take a picture of the Warehouse and also control the LED.
 
