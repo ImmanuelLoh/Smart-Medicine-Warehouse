@@ -138,15 +138,12 @@ Choose Create a single thing.
 
 ![](https://i.ibb.co/Hd6whJy/CAT-3.png)
 
-Enter a name for your thing, for example, SMW. Leave the rest of the fields by their
-default values. Click next.
+Enter a name for your thing, for example, SMW. Leave the rest of the fields by their default values. Click next.
 
 ![](https://i.ibb.co/YQkyg1f/CAT-4.png)
 
 
-Click create certificate. After a few seconds, the following page will appear. Download all
-four files. As for the root CA, click CA1
-certificate file. Remember to save it.
+Click create certificate. After a few seconds, the following page will appear. Download all four files. As for the root CA, click CA1 certificate file. Remember to save it.
 
 ![](https://i.ibb.co/pvdb03R/CAT-5.png)
 
@@ -160,10 +157,7 @@ Once done, rename the four files accordingly.
 
 ![](https://i.ibb.co/W5Hcb14/CAT-9.png)
 
-Move these four files into a directory in the Raspberry Pi.
-
-
-Click activate.
+Move these four files into a directory in the Raspberry Pi. Click activate.
 
 ![](https://i.ibb.co/C9HCHTz/CAT-10.png)
 
@@ -221,6 +215,18 @@ First, navigate to DynamoDB within the AWS website by clicking on services, then
 Fill in the data as shown. Click create.
 
 ![](https://i.ibb.co/M2d8tLJ/CAT-18.png)
+
+Go to IAM service on AWS Console and click "Roles"
+
+![](https://i.ibb.co/8MpqDdS/CAT-24.png)
+
+Click "Create Role" and on the next page, choose "AWS service", then "IOT". Under "Select your use case", select IoT.
+
+![](https://i.ibb.co/NWG6wv4/CAT-25.png)
+
+ Click "Next" until you are required to input a name for your role.
+ 
+ ![](https://i.ibb.co/v4gXst2/CAT-26.png)
 
 Next, navigate to IoT Core within the AWS website by clicking on services, then IoT Core. Click Act, then click Create.
 
