@@ -21,11 +21,12 @@ Done by: Immanuel Loh, Tharine Ramachandran, Andre Ching
 - Section 6 DynamoDB Setup
 - Section 7 SNS Setup
 - Section 8 Reading RFID/NFC Tags Setup
-- Section 9 Program Setup
-- Section 10 Web Interface Setup
-- Section 11 Expected Outcome
-- Section 12 Video Demonstration
-- Section 13 References
+- Section 9 Telegram Bot Setup
+- Section 10 Program Setup
+- Section 11 Web Interface Setup
+- Section 12 Expected Outcome
+- Section 13 Video Demonstration
+- Section 14 References
 
 ## Section 1 Overview of SMW
 ##### What is SMW about?
@@ -393,7 +394,41 @@ sudo python setup.py install
 
 ```
 
-## Section 9 Program setup
+
+## Section 9 Telegram Bot Setup
+
+Install telepot on your Raspberry Pi
+
+```
+pip install telepot
+
+```
+
+Start Telegram app on the computer and search for @BotFather
+
+![](https://i.ibb.co/Xb0SCz6/CAT-45.png)
+
+Send the command '/start'
+
+![](https://i.ibb.co/Zf61gzD/CAT-46.png)
+
+Send the command'/newbot'
+
+![](https://i.ibb.co/BL7zqXp/CAT-47.png)
+
+Enter the name of your bot and then the username of your bot. The BotFather will reply with a bot token which will be used later.
+
+![](https://i.ibb.co/f9dP5TH/CAT-48.png)
+
+Edit telegram.py. Run telegram.py
+
+```
+sudo python telegram.py
+
+```
+
+
+## Section 10 Program setup
 
 The following codes are needed for the application to work.  There are 3 separate RaspberryPIs. Entry Point needs the RFID Codes, Iot Core "Thing", AWS DynamoDB, Rules and Services. Warehouse needs DHT11 Codes, AWS DynamoDB, Rules and Services. The Parking Lot does not need any of these and only requires codes. Remember to execute above steps and ensure that the RPIs have been successfully set up before running the files. The files will be in the zip folder and will not be in the tutorial.
 
@@ -449,7 +484,7 @@ sudo python tempdata.py
 ```
 
 
-## Section 10 Web Interface Setup
+## Section 11 Web Interface Setup
 
 The following files are required for the web interface to work.
 
@@ -458,7 +493,7 @@ The following files are required for the web interface to work.
 The files will not be in the tutorial due to their size. They can be found in the .zip of the project.
 
 
-## Section 11 Expected Outcome
+## Section 12 Expected Outcome
 
 ### Entry Point RPI
 Entry Point RPI requires the codes in the RFID folder. When working correctly, it will display a message on the LCD screen when an RFID card is tapped. If the card is not authorized, it will display "Access Denied". If I tap my authorized card it will display a message with my name, "Hello Immanuel". Everytime I tap my authorized card, it will take a picture and send it to AWS. This is a safety measure in place for the warehouse. 
@@ -469,11 +504,11 @@ Parking Lot RPI requires the codes in the Distance Sensor folder. When working c
 ### Warehouse RPI
 The Warehouse RPI requires the codes in the Server, Sound Sensor, Telegram and Temperature folders. When working correctly, the Warehouse RPI will have a webpage, where there will be a graph for the temperature and a graph for the RFID card reader. Both display historical values of the two in a table and a graph. The data captured and displayed is Temperature in °C and number of times the RFID card has been tapped, respectively. There is also a button to remotely control the LED. A telegram bot can be launched. This telegram bot can take a picture of the Warehouse and also control the LED.
 
-## Section 12 Video Demonstration
+## Section 13 Video Demonstration
 
 You can watch us demonstrate and explain the program [here](https://youtu.be/nkdrZ8nbrqc).
 
-## Section 13 References
+## Section 14 References
 SP IOT Practicals
 
 Startbootstrap.com. (2019). SB Admin 2 - Start Bootstrap. [online] Available at: https://startbootstrap.com/template-overviews/sb-admin-2/ [Accessed 21 Aug. 2019].
