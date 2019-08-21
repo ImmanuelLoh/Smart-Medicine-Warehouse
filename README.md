@@ -208,7 +208,7 @@ Take note of your Endpoint
 
 Run the following command on your Raspberry Pi to install the AWS Python Library
 
-```python
+```
 sudo pip install --upgrade --force-reinstall pip==9.0.3
 sudo pip install AWSIoTPythonSDK --upgrade --disable-pip-version-check
 sudo pip install --upgrade pip
