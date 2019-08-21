@@ -26,10 +26,9 @@ Done by: Immanuel Loh, Tharine Ramachandran, Andre Ching
 - Section 12 Video Demonstration
 - Section 13 References
 
-
 ## Section 1 Overview of SMW
 ##### What is SMW about?
-SMW is our interpretation of a smart medicine warehouse. It has everything you need to monitor and maintain a medicine warehouse. Our goal was to make a comprehensive system to monitor and protect a technologically advanced warehouse. The warehouse has an RFID card reader, a temperature and humidity sensor, a burglar alarm, a login page, a remotely controllable light, and a parking lot.
+SMW is our interpretation of a smart medicine warehouse. It has everything you need to monitor and maintain a medicine warehouse. Our goal was to make a comprehensive system to monitor and protect a technologically advanced warehouse. Not only is this a warehouse, it also contains a smart parking lot. The warehouse has an RFID card reader, a temperature and humidity sensor, a burglar alarm, a login page, a remotely controllable light, and a parking lot.
 
 ##### Final Raspberry PI Setup
 This is what the final setup should look like.
