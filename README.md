@@ -2,7 +2,7 @@
 ST0324 Internet of Things CA2 Step-by-step Tutorial
 
 SCHOOL OF DIGITAL MEDIA AND INFOCOMM TECHNOLOGY 
-SmartWH (Smart Warehouse)
+SMW (Smart Medicine Warehouse)
 =============
 
 IOT CA2 SmartWH
@@ -10,7 +10,7 @@ Step-by-Step Tutorial
 ST0324 Internet of Things (IOT)
 
 #### Table of Contents
-- Section 1 Overview of SmartWH
+- Section 1 Overview of SMW
 - Section 2 Hardware requirements
 - Section 3 Hardware setup
 - Section 4 Create a "Thing"
@@ -23,9 +23,9 @@ ST0324 Internet of Things (IOT)
 - Section 11 References
 
 
-## Section 1 Overview of SmartWH
+## Section 1 Overview SMW SMW
 ##### A.  What is SmartWH about?
-SmartWH is our interpretation of a smart warehouse. It has everything you need to monitor and maintain a warehouse. Our goal was to make a comprehensive system to monitor and protect a technologically advanced warehouse. The warehouse has an RFID card reader, a temperature and humidity sensor, a burglar alarm, 
+SMW is our interpretation of a smart medicine warehouse. It has everything you need to monitor and maintain a medicine warehouse. Our goal was to make a comprehensive system to monitor and protect a technologically advanced warehouse. The warehouse has an RFID card reader, a temperature and humidity sensor, a burglar alarm, a login page, a remotely controllable light, and a parking lot.
 
 ##### B. Final Raspberry PI Setup
 This is what the final setup should look like.
@@ -57,7 +57,7 @@ The DHT11 Sensor reads the room's temperature and humidity. We use this sensor t
 
 ![](https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/1C/80/94db0a4e-61fa-4dc6-9533-83a7d301a016.JPG)
 
-The Sound Sensor reads the room's ambient sound level. We use this sensor to 
+The Sound Sensor reads the room's ambient sound level. We use this sensor to trigger the buzzer as part of a burglar alarm.
 
 ------------
 
@@ -73,7 +73,7 @@ The HC-SR04 Sensor is used as a parking sensor. It reads the distance of the car
 
 ![](https://www.taydaelectronics.com/media/catalog/product/cache/1/image/500x500/9df78eab33525d08d6e5fb8d27136e95/a/-/a-1554.jpg)
 
-We use this LED to show if access is granted when the RFID Card is tapped. The LED lights up when the authorized card is tapped. It does not light up when the unauthorized card is tapped.
+We use this LED to represent a light that can be controlled via the webpage.
 
 ------------
 
@@ -83,21 +83,21 @@ We use this LED to show if access is granted when the RFID Card is tapped. The L
 
 We use one LCD to display the authorized card holder's information when tapped.
 
-We use the other LCD to display a message when the distance sensor recognises that the car is too close.
+We use the other LCD to display messages that instruct the car to either park, reverse or stop.
 
 ------------
 
 ##### Resistors
 ###### 1 330Ω Resistor
-
+Resistor for the LED
 ![](https://storage.googleapis.com/stateless-www-faranux-com/2017/03/330-ohm.jpg)
 
-Resistor for the LED
-###### 1 10KΩ Resistor
 
+###### 1 10KΩ Resistor
+Resistor for the DHT11 Sensor
 ![](https://i.ebayimg.com/images/g/~OEAAOSwA3dYeQl6/s-l300.jpg)
 
-Resistor for the DHT11 Sensor
+
 
 ------------
 
@@ -121,3 +121,65 @@ In this section, we will connect all the necessary components described in Secti
 
 ![](https://i.ibb.co/pZNn9f5/IOT-immanuel-fritzing.png)
 
+------------
+
+
+
+## Section 4: Create a "Thing"
+a) First, navigate to IoT Core within the AWS website by clicking on services, then IoT Core.
+
+![](https://i.ibb.co/6rNMDfF/CAT-1.png)
+
+Under manage, select things and choose register a thing
+
+![](https://i.ibb.co/XsNvj38/CAT-2.png)
+
+Choose Create a single thing.
+
+![](https://i.ibb.co/Hd6whJy/CAT-3.png)
+
+d) Enter a name for your thing, for example, Smart. Leave the rest of the fields by their
+default values. Click next.
+
+
+
+
+e) Click create certificate. After a few seconds, the following page will appear. Download all
+four files. As for the root CA, download the VeriSign Class 3 Public Primary G5 root CA
+certificate file.
+
+
+
+f) Once done, rename the four files accordingly.
+
+
+
+g) Move these four files into a directory in the raspberry pi.
+
+h) Click activate.
+
+
+
+i) Click register thing. You will create a policy later.
+
+
+
+j) Navigate to policies under the secure section. Click create a policy.
+
+
+
+k) Enter a name for your policy, for example, SmartParkPolicy and enter the following under
+Add statements
+
+
+l) Navigate to certificates under secure section. Select the certificate you created previously,
+and click attach policy. Attach the policy you created previously.
+
+![Alt text](https://github.com/Revanus/DISMIoTSmartParkV2Assignment/blob/master/README%20images/image034.png "Optional title")
+
+![Alt text](https://github.com/Revanus/DISMIoTSmartParkV2Assignment/blob/master/README%20images/image035.png "Optional title")
+
+m) Select the certificate you created previously again, and click attach thing. Attach the policy
+you previously created. Attach the thing you created previously.
+
+![Alt text](https://github.com/Revanus/DISMIoTSmartParkV2Assignment/blob/master/README%20images/image036.png "Optional title")
