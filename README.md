@@ -256,7 +256,18 @@ Click “Subscribe to topic”
 
 ![](https://i.ibb.co/7Y6NMC0/CAT-28.png)
 
-Navigate to SNS on AWS Console. Click topics.
+Navigate to SNS on AWS Console. Click topics. Then click Create Topic.
 
 ![](https://i.ibb.co/mSfqKMw/CAT-29.png)
 
+Type in your topic name. Then click Create topic. Make a note of the ARN for the topic you just created.
+
+![](https://i.ibb.co/NtdB0Dv/CAT-31.png)
+
+Click Subscriptions and then click Create subscription. When directed to this page, fill in the data as applicable and select Email as the protocol.
+
+![](https://i.ibb.co/m01smR3/CAT-32.png)
+
+After confirming your subscription,  AWS IoT console and choose "Act", then Create. 
+
+![](https://i.ibb.co/n3JfwqW/CAT-33.png)
