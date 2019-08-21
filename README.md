@@ -9,6 +9,8 @@ IOT CA2 SmartWH
 Step-by-Step Tutorial
 ST0324 Internet of Things (IOT)
 
+Done by: Immanuel Loh, Tharine Ramachandran, Andre Ching
+
 #### Table of Contents
 - Section 1 Overview of SMW
 - Section 2 Hardware Requirements
@@ -244,7 +246,7 @@ Select the second option. Click "Configure action".
 
 ![](https://i.ibb.co/7Rbc2qj/CAT-21.png)
 
-Select the table which you have previously created. Click  Select. Select the role you've created previously. Click Add Action, then click Create Rule.
+Select the table which you have previously created. Click  Select. Select the role you have created previously. Click Add Action, then click Create Rule.
 
 ![](https://i.ibb.co/cLp37vg/CAT-27.png)
 
@@ -378,13 +380,17 @@ sudo apt-get install mosquitto mosquitto-clients
 
 ## Section 9 Web Interface Setup
 
+The following files are required for the web interface to work.
 
+
+
+The files will not be in the tutorial due to their size. They can be found in the .zip of the project.
 
 
 ## Section 10 Expected Outcome
 
 ### Entry Point RPI
-Entry Point RPI requires the codes in the RFID folder. When working correctly, it will display a message on the LCD screen when an RFID card is tapped. If the card is not authorized, it will display "Access Denied". If I tap my authorized card it will display "Hello Immanuel". Everytime I tap my authorized card, it will take a picture and send it to AWS. This is a safety measure in place for the warehouse. 
+Entry Point RPI requires the codes in the RFID folder. When working correctly, it will display a message on the LCD screen when an RFID card is tapped. If the card is not authorized, it will display "Access Denied". If I tap my authorized card it will display a message with my name, "Hello Immanuel". Everytime I tap my authorized card, it will take a picture and send it to AWS. This is a safety measure in place for the warehouse. 
 
 ### Parking Lot RPI
 Parking Lot RPI requires the codes in the Distance Sensor folder. When working correctly, it will display a message on the LCD screen if a car is too close, far or just nice. If the car is too far, it will display "Reverse". If it the car is too close, it will display "Stop". If the car is in perfect parking distance, it will display "Park".
