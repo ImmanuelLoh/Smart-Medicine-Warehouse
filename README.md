@@ -23,8 +23,8 @@ ST0324 Internet of Things (IOT)
 - Section 11 References
 
 
-## Section 1 Overview SMW SMW
-##### A.  What is SmartWH about?
+## Section 1 Overview SMW
+##### A.  What is SMW about?
 SMW is our interpretation of a smart medicine warehouse. It has everything you need to monitor and maintain a medicine warehouse. Our goal was to make a comprehensive system to monitor and protect a technologically advanced warehouse. The warehouse has an RFID card reader, a temperature and humidity sensor, a burglar alarm, a login page, a remotely controllable light, and a parking lot.
 
 ##### B. Final Raspberry PI Setup
@@ -189,3 +189,17 @@ Select the certificate you created previously again, and click attach thing. Att
 you previously created. Attach the thing you created previously.
 
 ![](https://i.ibb.co/vBhLzNs/CAT-15.png)
+
+Take note of your Endpoint
+
+![](https://i.ibb.co/QfQWhtn/CAT-16.png)
+------------
+
+
+### Create AWS Role
+
+a) Run the following command on your Raspberry Pi to install the AWS Command-line client on your Raspberry Pi
+
+```
+sudo pip install awscli --upgrade --user
+```
