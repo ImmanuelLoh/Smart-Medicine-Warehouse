@@ -280,3 +280,7 @@ Then, navigate to "Set one or more actions" and click the "Add action" button un
 
 ![](https://i.ibb.co/Y8Bnx1Y/CAT-35.png)
 
+Choose the Amazon SNS topic you created earlier, choose data type as JSON, and select your role.
+
+![](https://i.ibb.co/SPxBHdV/CAT-36.png)
+
