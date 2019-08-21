@@ -15,7 +15,7 @@ Done by: Immanuel Loh, Tharine Ramachandran, Andre Ching
 - Section 1 Overview of SMW
 - Section 2 Hardware Requirements
 - Section 3 Hardware Setup
-- Section 4 phpMyAdmin Setup
+- Section 4 phpMyAdmin/MySQL Setup
 - Section 5 Create a "Thing"
 - Section 6 DynamoDB Setup
 - Section 7 SNS Setup
@@ -135,6 +135,20 @@ In this section, we will connect all the necessary components described in Secti
 ![](https://i.ibb.co/pZNn9f5/IOT-immanuel-fritzing.png)
 
 ------------
+
+## Section 4: phpMyAdmin/MySQL Setup
+Login into phpMyAdmin. It can be accessed via “x/phpmyadmin” where x is your RPI IP address.
+
+![](https://i.ibb.co/GsqKDrp/CAT-40.png)
+
+
+Create a database named “iotdatabase”.
+
+![](https://i.ibb.co/mBLjyqp/CAT-41.png)
+
+Create a table in the database named “lights” with the values as seen in the image.
+
+![](https://i.ibb.co/3kM4cJw/CAT-43.png)
 
 
 
