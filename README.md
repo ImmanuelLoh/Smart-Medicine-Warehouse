@@ -30,12 +30,12 @@ SmartWH is our interpretation of a smart warehouse. It has everything you need t
 ##### B. Final Raspberry PI Setup
 This is what the final setup should look like.
 
-*insert image of final setup*
+![](https://i.ibb.co/mNpBrbK/DSC-0135.jpg)
 
 ##### C. System Architecture Diagram
 This is the system architecture diagram of our program.
 
-*insert image of SAD*
+![](https://i.ibb.co/9n5YmgB/System-Architecture-Diagram.jpg)
 
 ##### D. How the Web Application looks like
 
