@@ -304,7 +304,7 @@ Click Subscriptions and then click Create subscription. When directed to this pa
 
 ![](https://i.ibb.co/m01smR3/CAT-32.png)
 
-After confirming your subscription,  AWS IoT console and choose "Act", then Create. 
+After confirming your subscription, access the AWS IoT console and choose "Act", then Create. 
 
 ![](https://i.ibb.co/n3JfwqW/CAT-33.png)
 
