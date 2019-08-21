@@ -146,7 +146,7 @@ default values. Click next.
 
 e) Click create certificate. After a few seconds, the following page will appear. Download all
 four files. As for the root CA, click CA1
-certificate file. Remember to copy and paste this into a file and save it.
+certificate file. Remember to save it.
 
 ![](https://i.ibb.co/pvdb03R/CAT-5.png)
 
@@ -156,17 +156,20 @@ certificate file. Remember to copy and paste this into a file and save it.
 
 f) Once done, rename the four files accordingly.
 
+![](https://i.ibb.co/19y6PVz/CAT-8.png)
 
+![](https://i.ibb.co/W5Hcb14/CAT-9.png)
 
-g) Move these four files into a directory in the raspberry pi.
+g) Move these four files into a directory in the Raspberry Pi.
+
 
 h) Click activate.
 
+![](https://i.ibb.co/C9HCHTz/CAT-10.png)
 
+i) Click attach policy then click register thing. You will create a policy later.
 
-i) Click register thing. You will create a policy later.
-
-
+![](https://i.ibb.co/282QNJk/CAT-11.png)
 
 j) Navigate to policies under the secure section. Click create a policy.
 
