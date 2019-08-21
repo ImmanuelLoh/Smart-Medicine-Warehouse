@@ -194,13 +194,13 @@ Take note of your Endpoint
 
 ![](https://i.ibb.co/QfQWhtn/CAT-16.png)
 
-
+### Note: You will need to 2 "Things" for this project.
 ------------
 
 
 
 
-### Installing Libraries
+### Installing Libraries for "Things"
 
 Run the following command on your Raspberry Pi to install the AWS Python Library
 
@@ -210,14 +210,11 @@ sudo pip install AWSIoTPythonSDK --upgrade --disable-pip-version-check
 sudo pip install --upgrade pip
 
 ```
+## Section 5 DynamoDB Setup
 
-Run this command to install paho-mqtt which AWS is dependant on.
-```python
-sudo pip install paho-mqtt
-```
-Install Mosquitto broker and clients to your Raspberry Pi
+#### DynamoDB
 
-```python
-sudo apt-get install mosquitto mosquitto-clients
-```
+First, navigate to DynamoDB within the AWS website by clicking on services, then DynamoDB. Click create table.
+
+![](https://i.ibb.co/x7d67xj/CAT-17.png)
 
