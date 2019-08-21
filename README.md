@@ -48,10 +48,14 @@ Login Page
 
 This Login page validates the adminstrator's credentials. This is a security precaution we have taken to protect the webpage which control sensitive information.
 
+------------
+
 Entry Point Page
 ![](https://i.ibb.co/Pg86K3p/webpageentry.png)
 
 This page displays the number of times an authorized user has tapped their card to enter the warehouse. It displays the data in both a graph and a table.
+
+------------
 
 Warehouse Page
 ![](https://i.ibb.co/tCG3B1s/webpagewarehouse.png)
