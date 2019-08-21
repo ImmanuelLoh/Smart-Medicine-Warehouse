@@ -150,12 +150,9 @@ Create a table in the database named “temperaturerecord” with the values as 
 
 ![](https://i.ibb.co/3kM4cJw/CAT-43.png)
 
-Create a user that is able to access the database with all priorities. Username “assignment user” password “robots1234” 
+Create a user that is able to access the database with all priorities. Username “assignment user” password “robots1234” .
 
 ![](https://i.ibb.co/q53wFYs/CAT-44.png)
-
-
-
 
 ## Section 5: Create a "Thing"
 Firstly, navigate to IoT Core within the AWS website by clicking on services, then IoT Core.
@@ -381,8 +378,7 @@ sudo python setup.py install
 
 ## Section 9 Program setup
 
-The following codes are needed for the application to work.  There are 3 separate RaspberryPIs. One needs the RFID Codes, Iot Core "Thing", AWS DynamoDB, Rules and Services. Another one needs DHT11 Codes, AWS DynamoDB, Rules and Services. The last one does not need any of these and only requires codes. The files will be in the zip folder and will not be in the tutorial.
-
+The following codes are needed for the application to work.  There are 3 separate RaspberryPIs. Entry Point needs the RFID Codes, Iot Core "Thing", AWS DynamoDB, Rules and Services. Warehouse needs DHT11 Codes, AWS DynamoDB, Rules and Services. The Parking Lot does not need any of these and only requires codes. Remember to execute above steps and ensure that the RPIs have been successfully set up before running the files. The files will be in the zip folder and will not be in the tutorial.
 
 ### Installing Necessary Libraries
 
@@ -407,6 +403,34 @@ Install Mosquitto broker and clients to your Raspberry Pi
 ```python
 sudo apt-get install mosquitto mosquitto-clients
 ```
+
+### Run files
+
+Run rfid.py for Entry Point RPI
+
+```
+sudo python rfid.py
+
+```
+
+Run distancesensor.py for Parking Lot RPI
+
+```
+sudo python distancesensor.py
+
+```
+
+Run server.py, sound2.py, telegram.py, aws_pubsub_temp.py, tempdata.py for Warehouse RPI.
+
+```
+sudo python server.py
+sudo python sound2.py
+sudo python telegram.py
+sudo python aws_pubsub_temp.py
+sudo python tempdata.py
+
+```
+
 
 ## Section 10 Web Interface Setup
 
