@@ -218,3 +218,14 @@ First, navigate to DynamoDB within the AWS website by clicking on services, then
 
 ![](https://i.ibb.co/x7d67xj/CAT-17.png)
 
+Fill in the data as shown. Click create.
+
+![](https://i.ibb.co/M2d8tLJ/CAT-18.png)
+
+Next, navigate to IoT Core within the AWS website by clicking on services, then IoT Core. Click Act, then click Create.
+
+![](https://i.ibb.co/2Srv0Vm/CAT-19.png)
+
+Then, navigate to "Set one or more actions" and click the "Add action" button under it.
+![](https://i.ibb.co/98mZWZJ/CAT-20.png)
+
