@@ -11,8 +11,8 @@ ST0324 Internet of Things (IOT)
 
 #### Table of Contents
 - Section 1 Overview of SMW
-- Section 2 Hardware requirements
-- Section 3 Hardware setup
+- Section 2 Hardware Requirements
+- Section 3 Hardware Setup
 - Section 4 Create a "Thing"
 - Section 5 DynamoDB Setup
 - Section 6 AWS EC2 Hosting of Web Application
@@ -193,13 +193,31 @@ you previously created. Attach the thing you created previously.
 Take note of your Endpoint
 
 ![](https://i.ibb.co/QfQWhtn/CAT-16.png)
+
+
 ------------
 
 
-### Create AWS Role
 
-a) Run the following command on your Raspberry Pi to install the AWS Command-line client on your Raspberry Pi
+
+### Installing Libraries
+
+Run the following command on your Raspberry Pi to install the AWS Python Library
+
+```python
+sudo pip install --upgrade --force-reinstall pip==9.0.3
+sudo pip install AWSIoTPythonSDK --upgrade --disable-pip-version-check
+sudo pip install --upgrade pip
 
 ```
-sudo pip install awscli --upgrade --user
+
+Run this command to install paho-mqtt which AWS is dependant on.
+```python
+sudo pip install paho-mqtt
 ```
+Install Mosquitto broker and clients to your Raspberry Pi
+
+```python
+sudo apt-get install mosquitto mosquitto-clients
+```
+
