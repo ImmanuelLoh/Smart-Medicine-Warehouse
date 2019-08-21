@@ -227,5 +227,14 @@ Next, navigate to IoT Core within the AWS website by clicking on services, then 
 ![](https://i.ibb.co/2Srv0Vm/CAT-19.png)
 
 Then, navigate to "Set one or more actions" and click the "Add action" button under it.
+
 ![](https://i.ibb.co/98mZWZJ/CAT-20.png)
+
+Select the second option. Click "Configure action".
+
+![](https://i.ibb.co/7Rbc2qj/CAT-21.png)
+
+Select the table which you have previously created. Click Create Role. Enter any name you want.
+
+![](https://i.ibb.co/bbbtCRK/CAT-22.png)
 
