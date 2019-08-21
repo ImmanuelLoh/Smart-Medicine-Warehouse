@@ -271,3 +271,12 @@ Click Subscriptions and then click Create subscription. When directed to this pa
 After confirming your subscription,  AWS IoT console and choose "Act", then Create. 
 
 ![](https://i.ibb.co/n3JfwqW/CAT-33.png)
+
+Enter data as shown.
+
+![](https://i.ibb.co/v3zBQRg/CAT-34.png)
+
+Then, navigate to "Set one or more actions" and click the "Add action" button under it. Select SNS.
+
+![](https://i.ibb.co/Y8Bnx1Y/CAT-35.png)
+
