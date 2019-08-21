@@ -106,6 +106,8 @@ We use the other LCD to display messages that instruct the car to either park, r
 
 We use the buzzer as part of the burglar alarm system. It triggers when sound is detected.
 
+------------
+
 ##### Resistors
 ###### 1 330Ω Resistor
 Resistor for the LED
