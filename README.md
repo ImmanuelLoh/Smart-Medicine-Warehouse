@@ -42,7 +42,14 @@ This is the system architecture diagram of our program.
 
 ##### D. How the Web Application looks like
 
-*insert images of web application (all pages)*
+Login Page
+![](https://i.ibb.co/PcGgpYR/webpagelogin.png)
+
+Entry Point Page
+![](https://i.ibb.co/Pg86K3p/webpageentry.png)
+
+Warehouse Page
+![](https://i.ibb.co/tCG3B1s/webpagewarehouse.png)
 
 ## Section 2 Hardware Requirements
 ##### A.  Hardware Checklist
