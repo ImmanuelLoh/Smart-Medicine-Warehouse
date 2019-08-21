@@ -33,7 +33,7 @@ SMW is our interpretation of a smart medicine warehouse. It has everything you n
 ##### B. Final Raspberry PI Setup
 This is what the final setup should look like.
 
-![](https://i.ibb.co/mNpBrbK/DSC-0135.jpg)
+![](https://i.ibb.co/bbw8V3C/DSC-0133.jpg)
 
 ##### C. System Architecture Diagram
 This is the system architecture diagram of our program.
