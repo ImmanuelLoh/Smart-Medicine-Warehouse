@@ -226,6 +226,10 @@ Next, navigate to IoT Core within the AWS website by clicking on services, then 
 
 ![](https://i.ibb.co/2Srv0Vm/CAT-19.png)
 
+Enter the data as shown.
+
+![](https://i.ibb.co/8x2kCCL/CAT-23.png)
+
 Then, navigate to "Set one or more actions" and click the "Add action" button under it.
 
 ![](https://i.ibb.co/98mZWZJ/CAT-20.png)
