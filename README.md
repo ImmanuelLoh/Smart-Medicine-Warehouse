@@ -51,6 +51,9 @@ Entry Point Page
 Warehouse Page
 ![](https://i.ibb.co/tCG3B1s/webpagewarehouse.png)
 
+##### E. Video Demonstration
+You can watch us demonstrate and explain the program [here](https://youtu.be/nkdrZ8nbrqc).
+
 ## Section 2 Hardware Requirements
 ##### A.  Hardware Checklist
 ###### 1 DHT11 Sensor
