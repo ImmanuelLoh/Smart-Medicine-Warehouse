@@ -26,7 +26,7 @@ Done by: Immanuel Loh, Tharine Ramachandran, Andre Ching
 - Section 12 References
 
 
-## Section 1 Overview SMW
+## Section 1 Overview of SMW
 ##### A.  What is SMW about?
 SMW is our interpretation of a smart medicine warehouse. It has everything you need to monitor and maintain a medicine warehouse. Our goal was to make a comprehensive system to monitor and protect a technologically advanced warehouse. The warehouse has an RFID card reader, a temperature and humidity sensor, a burglar alarm, a login page, a remotely controllable light, and a parking lot.
 
