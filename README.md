@@ -15,7 +15,7 @@ ST0324 Internet of Things (IOT)
 - Section 3 Hardware Setup
 - Section 4 Create a "Thing"
 - Section 5 DynamoDB Setup
-- Section 6 AWS EC2 Hosting of Web Application
+- Section 6 MQTT Setup
 - Section 7 Reading RFID/NFC Tags Setup
 - Section 8 Program Setup
 - Section 9 Web Interface Setup
@@ -188,7 +188,7 @@ Take note of your Endpoint
 
 ![](https://i.ibb.co/QfQWhtn/CAT-16.png)
 
-### Note: You will need to 2 "Things" for this project.
+### Note: You will need to 2 "Things" for this project. One for the RPI with the DHT11 sensor and one for the RPI with the RFID card reader.
 ------------
 
 
@@ -248,4 +248,15 @@ Select the table which you have previously created. Click  Select. Select the ro
 
 ![](https://i.ibb.co/cLp37vg/CAT-27.png)
 
+## Section 6 MQTT Setup
+
+In the AWS IoT console, click Test.
+Type on the topic on which your thing publishes. 
+Click “Subscribe to topic”
+
+![](https://i.ibb.co/7Y6NMC0/CAT-28.png)
+
+Navigate to SNS on AWS Console. Click topics.
+
+![](https://i.ibb.co/mSfqKMw/CAT-29.png)
 
