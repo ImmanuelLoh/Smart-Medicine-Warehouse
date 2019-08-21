@@ -23,24 +23,25 @@ Done by: Immanuel Loh, Tharine Ramachandran, Andre Ching
 - Section 9 Program Setup
 - Section 10 Web Interface Setup
 - Section 11 Expected Outcome
-- Section 12 References
+- Section 12 Video Demonstration
+- Section 13 References
 
 
 ## Section 1 Overview of SMW
-##### A.  What is SMW about?
+##### What is SMW about?
 SMW is our interpretation of a smart medicine warehouse. It has everything you need to monitor and maintain a medicine warehouse. Our goal was to make a comprehensive system to monitor and protect a technologically advanced warehouse. The warehouse has an RFID card reader, a temperature and humidity sensor, a burglar alarm, a login page, a remotely controllable light, and a parking lot.
 
-##### B. Final Raspberry PI Setup
+##### Final Raspberry PI Setup
 This is what the final setup should look like.
 
 ![](https://i.ibb.co/bbw8V3C/DSC-0133.jpg)
 
-##### C. System Architecture Diagram
+##### System Architecture Diagram
 This is the system architecture diagram of our program.
 
 ![](https://i.ibb.co/9n5YmgB/System-Architecture-Diagram.jpg)
 
-##### D. How the Web Application looks like
+##### How the Web Application looks like
 
 Login Page
 ![](https://i.ibb.co/PcGgpYR/webpagelogin.png)
@@ -51,8 +52,6 @@ Entry Point Page
 Warehouse Page
 ![](https://i.ibb.co/tCG3B1s/webpagewarehouse.png)
 
-##### E. Video Demonstration
-You can watch us demonstrate and explain the program [here](https://youtu.be/nkdrZ8nbrqc).
 
 ## Section 2 Hardware Requirements
 ##### A.  Hardware Checklist
@@ -460,7 +459,11 @@ Parking Lot RPI requires the codes in the Distance Sensor folder. When working c
 ### Warehouse RPI
 The Warehouse RPI requires the codes in the Server, Sound Sensor, Telegram and Temperature folders. When working correctly, the Warehouse RPI will have a webpage, where there will be a graph for the temperature and a graph for the RFID card reader. Both display historical values of the two in a table and a graph. The data captured and displayed is Temperature in °C and number of times the RFID card has been tapped, respectively. There is also a button to remotely control the LED. A telegram bot can be launched. This telegram bot can take a picture of the Warehouse and also control the LED.
 
-## Section 12 References
+## Section 12 Video Demonstration
+
+You can watch us demonstrate and explain the program [here](https://youtu.be/nkdrZ8nbrqc).
+
+## Section 13 References
 SP IOT Practicals
 
 Startbootstrap.com. (2019). SB Admin 2 - Start Bootstrap. [online] Available at: https://startbootstrap.com/template-overviews/sb-admin-2/ [Accessed 21 Aug. 2019].
