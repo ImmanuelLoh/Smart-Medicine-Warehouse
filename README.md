@@ -15,14 +15,15 @@ Done by: Immanuel Loh, Tharine Ramachandran, Andre Ching
 - Section 1 Overview of SMW
 - Section 2 Hardware Requirements
 - Section 3 Hardware Setup
-- Section 4 Create a "Thing"
-- Section 5 DynamoDB Setup
-- Section 6 SNS Setup
-- Section 7 Reading RFID/NFC Tags Setup
-- Section 8 Program Setup
-- Section 9 Web Interface Setup
-- Section 10 Expected Outcome
-- Section 11 References
+- Section 4 phpMyAdmin Setup
+- Section 5 Create a "Thing"
+- Section 6 DynamoDB Setup
+- Section 7 SNS Setup
+- Section 8 Reading RFID/NFC Tags Setup
+- Section 9 Program Setup
+- Section 10 Web Interface Setup
+- Section 11 Expected Outcome
+- Section 12 References
 
 
 ## Section 1 Overview SMW
@@ -127,7 +128,7 @@ In this section, we will connect all the necessary components described in Secti
 
 
 
-## Section 4: Create a "Thing"
+## Section 5: Create a "Thing"
 Firstly, navigate to IoT Core within the AWS website by clicking on services, then IoT Core.
 
 ![](https://i.ibb.co/6rNMDfF/CAT-1.png)
@@ -206,7 +207,7 @@ sudo pip install AWSIoTPythonSDK --upgrade --disable-pip-version-check
 sudo pip install --upgrade pip
 
 ```
-## Section 5 DynamoDB Setup
+## Section 6 DynamoDB Setup
 
 #### DynamoDB
 
@@ -250,7 +251,7 @@ Select the table which you have previously created. Click  Select. Select the ro
 
 ![](https://i.ibb.co/cLp37vg/CAT-27.png)
 
-## Section 6 SNS Setup
+## Section 7 SNS Setup
 
 In the AWS IoT console, click Test.
 Type on the topic on which your thing publishes. 
@@ -286,7 +287,7 @@ Choose the Amazon SNS topic you created earlier, choose data type as JSON, and s
 
 ![](https://i.ibb.co/SPxBHdV/CAT-36.png)
 
-## Section 7 Hardware Setup
+## Section 8 Hardware Setup
 
 
 #### Enable SPI and prepare the MFRC522 libraries
@@ -349,20 +350,20 @@ sudo python setup.py install
 
 ```
 
-## Section 8 Program setup
+## Section 9 Program setup
 
 The following codes are needed for the application to work.  There are 3 separate RaspberryPIs. One needs the RFID Codes, Iot Core "Thing", AWS DynamoDB, Rules and Services. Another one needs DHT11 Codes, AWS DynamoDB, Rules and Services. The last one does not need any of these and only requires codes. The files will be in the zip folder and will not be in the tutorial.
 
 
-### A. Installing Necessary Libraries
+### Installing Necessary Libraries
 
-a) Install boto3 using the command below.
+Install boto3 using the command below.
 
 ```
 sudo pip install boto3
 ```
 
-b) Install the rpi-lcd library using the commands below.
+Install the rpi-lcd library using the commands below.
 
 ```
 sudo pip install rpi-lcd
@@ -378,16 +379,16 @@ Install Mosquitto broker and clients to your Raspberry Pi
 sudo apt-get install mosquitto mosquitto-clients
 ```
 
-## Section 9 Web Interface Setup
+## Section 10 Web Interface Setup
 
 The following files are required for the web interface to work.
 
-
+![](https://i.ibb.co/CW6qYSj/CAT-39.png)
 
 The files will not be in the tutorial due to their size. They can be found in the .zip of the project.
 
 
-## Section 10 Expected Outcome
+## Section 11 Expected Outcome
 
 ### Entry Point RPI
 Entry Point RPI requires the codes in the RFID folder. When working correctly, it will display a message on the LCD screen when an RFID card is tapped. If the card is not authorized, it will display "Access Denied". If I tap my authorized card it will display a message with my name, "Hello Immanuel". Everytime I tap my authorized card, it will take a picture and send it to AWS. This is a safety measure in place for the warehouse. 
@@ -398,3 +399,5 @@ Parking Lot RPI requires the codes in the Distance Sensor folder. When working c
 ### Warehouse RPI
 The Warehouse RPI requires the codes in the Server, Sound Sensor, Telegram and Temperature folders. When working correctly, the Warehouse RPI will have a webpage, where there will be a graph for the temperature and a graph for the RFID card reader. Both display historical values of the two in a table and a graph. The data captured and displayed is Temperature in °C and number of times the RFID card has been tapped, respectively. There is also a button to remotely control the LED. A telegram bot can be launched. This telegram bot can take a picture of the Warehouse and also control the LED.
 
+## Section 12 References
+Startbootstrap.com. (2019). SB Admin 2 - Start Bootstrap. [online] Available at: https://startbootstrap.com/template-overviews/sb-admin-2/ [Accessed 21 Aug. 2019].
