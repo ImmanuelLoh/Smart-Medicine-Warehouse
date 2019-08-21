@@ -407,4 +407,6 @@ Parking Lot RPI requires the codes in the Distance Sensor folder. When working c
 The Warehouse RPI requires the codes in the Server, Sound Sensor, Telegram and Temperature folders. When working correctly, the Warehouse RPI will have a webpage, where there will be a graph for the temperature and a graph for the RFID card reader. Both display historical values of the two in a table and a graph. The data captured and displayed is Temperature in °C and number of times the RFID card has been tapped, respectively. There is also a button to remotely control the LED. A telegram bot can be launched. This telegram bot can take a picture of the Warehouse and also control the LED.
 
 ## Section 12 References
+SP IOT Practicals
+
 Startbootstrap.com. (2019). SB Admin 2 - Start Bootstrap. [online] Available at: https://startbootstrap.com/template-overviews/sb-admin-2/ [Accessed 21 Aug. 2019].
