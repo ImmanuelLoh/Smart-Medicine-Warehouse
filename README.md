@@ -158,7 +158,7 @@ Create a table in the database named “temperaturerecord” with the values as 
 
 ![](https://i.ibb.co/3kM4cJw/CAT-43.png)
 
-Create a user that is able to access the database with all priorities. Username “assignment user” password “robots1234” .
+Create a user that is able to access the database with all priorities. Username “assignmentuser” password “robots1234” .
 
 ![](https://i.ibb.co/q53wFYs/CAT-44.png)
 
