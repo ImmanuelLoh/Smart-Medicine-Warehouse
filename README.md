@@ -126,7 +126,7 @@ In this section, we will connect all the necessary components described in Secti
 
 
 ## Section 4: Create a "Thing"
-a) First, navigate to IoT Core within the AWS website by clicking on services, then IoT Core.
+Firstly, navigate to IoT Core within the AWS website by clicking on services, then IoT Core.
 
 ![](https://i.ibb.co/6rNMDfF/CAT-1.png)
 
@@ -138,13 +138,13 @@ Choose Create a single thing.
 
 ![](https://i.ibb.co/Hd6whJy/CAT-3.png)
 
-d) Enter a name for your thing, for example, SMW. Leave the rest of the fields by their
+Enter a name for your thing, for example, SMW. Leave the rest of the fields by their
 default values. Click next.
 
 ![](https://i.ibb.co/YQkyg1f/CAT-4.png)
 
 
-e) Click create certificate. After a few seconds, the following page will appear. Download all
+Click create certificate. After a few seconds, the following page will appear. Download all
 four files. As for the root CA, click CA1
 certificate file. Remember to save it.
 
@@ -154,36 +154,38 @@ certificate file. Remember to save it.
 
 ![](https://i.ibb.co/v1Whxhs/CAT-7.png)
 
-f) Once done, rename the four files accordingly.
+Once done, rename the four files accordingly.
 
 ![](https://i.ibb.co/19y6PVz/CAT-8.png)
 
 ![](https://i.ibb.co/W5Hcb14/CAT-9.png)
 
-g) Move these four files into a directory in the Raspberry Pi.
+Move these four files into a directory in the Raspberry Pi.
 
 
-h) Click activate.
+Click activate.
 
 ![](https://i.ibb.co/C9HCHTz/CAT-10.png)
 
-i) Click attach policy then click register thing. You will create a policy later.
+Click attach policy then click register thing. You will create a policy later.
 
 ![](https://i.ibb.co/282QNJk/CAT-11.png)
 
-j) Navigate to policies under the secure section. Click create a policy.
+Navigate to policies under the secure section. Click create a policy.
+
+![](https://i.ibb.co/z5wQx0F/CAT-12.png)
+
+Enter a name for your policy, for example, SMWPolicy and enter the following under "Add statements". Click create when done.
+
+![](https://i.ibb.co/kSFW762/CAT-13.png)
 
 
-
-k) Enter a name for your policy, for example, SmartParkPolicy and enter the following under
-Add statements
-
-
-l) Navigate to certificates under secure section. Select the certificate you created previously,
+Navigate to certificates under secure section. Select the certificate you created previously,
 and click attach policy. Attach the policy you created previously.
 
+![](https://i.ibb.co/yhqk8hd/CAT-14.png)
 
-
-m) Select the certificate you created previously again, and click attach thing. Attach the policy
+Select the certificate you created previously again, and click attach thing. Attach the policy
 you previously created. Attach the thing you created previously.
 
+![](https://i.ibb.co/vBhLzNs/CAT-15.png)
