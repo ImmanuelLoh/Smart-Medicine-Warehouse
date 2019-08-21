@@ -142,13 +142,18 @@ Login into phpMyAdmin. It can be accessed via “x/phpmyadmin” where x is your
 ![](https://i.ibb.co/GsqKDrp/CAT-40.png)
 
 
-Create a database named “iotdatabase”.
+Create a database named “assignmentdatabase” (I am using tempdatabase for demonstration purposes).
 
 ![](https://i.ibb.co/mBLjyqp/CAT-41.png)
 
-Create a table in the database named “lights” with the values as seen in the image.
+Create a table in the database named “temperaturerecord” with the values as seen in the image. Tick the box under A_I(Auto Increment) for id.
 
 ![](https://i.ibb.co/3kM4cJw/CAT-43.png)
+
+Create a user that is able to access the database with all priorities. Username “assignment user” password “robots1234” 
+
+![](https://i.ibb.co/q53wFYs/CAT-44.png)
+
 
 
 
