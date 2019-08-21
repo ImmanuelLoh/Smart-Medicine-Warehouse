@@ -347,3 +347,39 @@ sudo python setup.py install
 
 ```
 
+## Section 8 Program setup
+
+The following codes are needed for the application to work.  There are 3 separate RaspberryPIs. One needs the RFID Codes, Iot Core "Thing", AWS DynamoDB, Rules and Services. Another one needs DHT11 Codes, AWS DynamoDB, Rules and Services. The last one does not need any of these and only requires codes. The files will be in the zip folder and will not be in the tutorial.
+
+
+### A. Installing Necessary Libraries
+
+a) Install boto3 using the command below.
+
+```
+sudo pip install boto3
+```
+
+b) Install the rpi-lcd library using the commands below.
+
+```
+sudo pip install rpi-lcd
+```
+
+Run this command to install paho-mqtt which AWS is dependant on.
+```python
+sudo pip install paho-mqtt
+```
+Install Mosquitto broker and clients to your Raspberry Pi
+
+```python
+sudo apt-get install mosquitto mosquitto-clients
+```
+
+### Entry Point RPI
+Entry Point RPI requires the codes in the RFID folder. When working correctly, it will display a message on the LCD screen when an RFID card is tapped. If the card is not authorized, it will display "Access Denied". If I tap my authorized card it will display "Hello Immanuel". Everytime I tap my authorized card, it will take a picture and send it to AWS. This is a safety measure in place for the warehouse. 
+
+### 
+
+
+
