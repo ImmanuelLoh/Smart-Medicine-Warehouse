@@ -15,7 +15,7 @@ ST0324 Internet of Things (IOT)
 - Section 3 Hardware Setup
 - Section 4 Create a "Thing"
 - Section 5 DynamoDB Setup
-- Section 6 MQTT Setup
+- Section 6 SNS Setup
 - Section 7 Reading RFID/NFC Tags Setup
 - Section 8 Program Setup
 - Section 9 Web Interface Setup
@@ -248,7 +248,7 @@ Select the table which you have previously created. Click  Select. Select the ro
 
 ![](https://i.ibb.co/cLp37vg/CAT-27.png)
 
-## Section 6 MQTT Setup
+## Section 6 SNS Setup
 
 In the AWS IoT console, click Test.
 Type on the topic on which your thing publishes. 
@@ -283,4 +283,67 @@ Then, navigate to "Set one or more actions" and click the "Add action" button un
 Choose the Amazon SNS topic you created earlier, choose data type as JSON, and select your role.
 
 ![](https://i.ibb.co/SPxBHdV/CAT-36.png)
+
+## Section 7 Hardware Setup
+
+
+#### Enable SPI and prepare the MFRC522 libraries
+
+If your raspberry pi is not configured with the MFRC522 libraries, you can follow the following
+instructions to set it up.
+
+##### << Enable SPI via raspi-config >>
+
+
+a) Run raspi-config, choose menu item “5 Interfacing Options” and enable SPI.
+
+```
+sudo rasp-config
+```
+![](https://i.ibb.co/2gs0wBm/CAT-38.png)
+
+![](https://i.ibb.co/Qv537By/CAT-37.png)
+
+
+##### << Enable device tree in boot.txt>>
+
+a) Modify the /boot/config.txt to enable SPI
+
+```
+sudo nano /boot/config.txt
+```
+
+b) Ensure these lines are included in config.txt
+
+```
+device_tree_param=spi=on
+dtoverlay=spi-bcm2835
+```
+
+**<< Install Python-dev>>**
+c) Install the Python development libraries
+
+```
+sudo apt-get install python-dev
+```
+
+**<< Install SPI-Py Library >>**
+
+d) Set up the SPI Python libraries since the card reader uses the SPI interface
+```
+git clone https://github.com/lthiery/SPI-Py.git
+cd /home/pi/SPI-Py
+sudo python setup.py install
+```
+
+**<< Install RFID library >>**
+
+e) Clone the MFRC522-python library and copy out the required files to your project directory
+```
+cd ~
+git clone https://github.com/pimylifeup/MFRC522-python.git
+cd ~/MFRC522-python
+sudo python setup.py install
+
+```
 
