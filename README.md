@@ -244,7 +244,8 @@ Select the second option. Click "Configure action".
 
 ![](https://i.ibb.co/7Rbc2qj/CAT-21.png)
 
-Select the table which you have previously created. Click Create Role. Enter any name you want.
+Select the table which you have previously created. Click  Select. Select the role you've created previously. Click Add Action, then click Create Rule.
 
-![](https://i.ibb.co/bbbtCRK/CAT-22.png)
+![](https://i.ibb.co/cLp37vg/CAT-27.png)
+
 
