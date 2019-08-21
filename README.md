@@ -138,17 +138,21 @@ Choose Create a single thing.
 
 ![](https://i.ibb.co/Hd6whJy/CAT-3.png)
 
-d) Enter a name for your thing, for example, Smart. Leave the rest of the fields by their
+d) Enter a name for your thing, for example, SMW. Leave the rest of the fields by their
 default values. Click next.
 
-
+![](https://i.ibb.co/YQkyg1f/CAT-4.png)
 
 
 e) Click create certificate. After a few seconds, the following page will appear. Download all
-four files. As for the root CA, download the VeriSign Class 3 Public Primary G5 root CA
-certificate file.
+four files. As for the root CA, click CA1
+certificate file. Remember to copy and paste this into a file and save it.
 
+![](https://i.ibb.co/pvdb03R/CAT-5.png)
 
+![](https://i.ibb.co/7Qj4fqt/CAT-6.png)
+
+![](https://i.ibb.co/v1Whxhs/CAT-7.png)
 
 f) Once done, rename the four files accordingly.
 
@@ -175,11 +179,8 @@ Add statements
 l) Navigate to certificates under secure section. Select the certificate you created previously,
 and click attach policy. Attach the policy you created previously.
 
-![Alt text](https://github.com/Revanus/DISMIoTSmartParkV2Assignment/blob/master/README%20images/image034.png "Optional title")
 
-![Alt text](https://github.com/Revanus/DISMIoTSmartParkV2Assignment/blob/master/README%20images/image035.png "Optional title")
 
 m) Select the certificate you created previously again, and click attach thing. Attach the policy
 you previously created. Attach the thing you created previously.
 
-![Alt text](https://github.com/Revanus/DISMIoTSmartParkV2Assignment/blob/master/README%20images/image036.png "Optional title")
