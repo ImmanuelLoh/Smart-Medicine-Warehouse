@@ -114,3 +114,10 @@ We use this card and card reader as an authorization checkpoint.
 In this section, we will connect all the necessary components described in Section 2.
 
 ##### Fritzing Diagrams
+
+![](https://i.ibb.co/0jHvyPX/IOT-andre-fritzing.png)
+
+![](https://i.ibb.co/gtY11Zd/IOT-thara-fritzing.png)
+
+![](https://i.ibb.co/pZNn9f5/IOT-immanuel-fritzing.png)
+
