@@ -416,11 +416,12 @@ Send the command'/newbot'
 
 ![](https://i.ibb.co/BL7zqXp/CAT-47.png)
 
-Enter the name of your bot and then the username of your bot. The BotFather will reply with a bot token which will be used later.
+Enter the name of your bot and then the username of your bot. The BotFather will reply with a bot token which will be used in telegram.py
 
 ![](https://i.ibb.co/f9dP5TH/CAT-48.png)
 
-Edit telegram.py. Run telegram.py
+
+Edit telegram.py accordingly. Run telegram.py
 
 ```
 sudo python telegram.py
