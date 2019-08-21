@@ -70,7 +70,7 @@ The DHT11 Sensor reads the room's temperature and humidity. We use this sensor t
 
 ![](https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/1C/80/94db0a4e-61fa-4dc6-9533-83a7d301a016.JPG)
 
-The Sound Sensor reads the room's ambient sound level. We use this sensor to trigger the buzzer as part of a burglar alarm.
+The Sound Sensor reads the room's ambient sound level. We use this sensor to trigger the buzzer as part of a burglar alarm if sound is detected.
 
 ------------
 
@@ -100,6 +100,12 @@ We use the other LCD to display messages that instruct the car to either park, r
 
 ------------
 
+##### Buzzer
+
+![](https://cdn.shopify.com/s/files/1/0176/3274/products/5v-mini-buzzer_1024x1024.jpg?v=1561293769)
+
+We use the buzzer as part of the burglar alarm system. It triggers when sound is detected.
+
 ##### Resistors
 ###### 1 330Ω Resistor
 Resistor for the LED
@@ -128,7 +134,7 @@ In this section, we will connect all the necessary components described in Secti
 
 ##### Fritzing Diagrams
 
-![](https://i.ibb.co/0jHvyPX/IOT-andre-fritzing.png)
+![](https://i.ibb.co/74YSpJW/IOT-andre-fritzing.png)
 
 ![](https://i.ibb.co/gtY11Zd/IOT-thara-fritzing.png)
 
