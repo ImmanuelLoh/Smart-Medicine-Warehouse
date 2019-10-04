@@ -513,3 +513,5 @@ You can watch us demonstrate and explain the program [here](https://youtu.be/nkd
 SP IOT Practicals
 
 Startbootstrap.com. (2019). SB Admin 2 - Start Bootstrap. [online] Available at: https://startbootstrap.com/template-overviews/sb-admin-2/ [Accessed 21 Aug. 2019].
+
+Documentation done by Immanuel Loh
